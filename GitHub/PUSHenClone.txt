@@ -29,3 +29,26 @@ git pull origin main  --allow-unrelated-histories
 
 *git pull origin main 
 para actualizar los cambios de una computadora a otra 
+
+*git pull 
+para traer el último cambio del servidor 
+
+--en caso de que en la consola aparezca el error de "no tracking information for the current branch 
+  git pull <remote> <branch> 
+  if you wish to see tracking information for this branch...
+
+  git branch --setup-upstreamo-to=origin/<branch> master(o main)--
+
+  debemos hacer 
+
+  git pull origin main (o master)
+
+  git commit -am "nueva versión"
+
+*Antes de enviar el cambio al repositorio remoto debemos reperir lo siguiente 
+
+git pull origin main 
+
+git push origin main 
+
+
