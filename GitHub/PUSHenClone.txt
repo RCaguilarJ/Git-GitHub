@@ -1,0 +1,27 @@
+clonamos el repositorio 
+
+-git remote add origin (url del clone) 
+
+-git remote -v (nos muestra un origin a dónde hacer fetch y otro a dónde hacer push)
+
+
+***originalmente es para el push era con 'master' pero hicieron el cambio a 'main'***
+antes:
+git push origin master 
+
+*si el curso está en master u debes cambiarlo a main es:
+establecer la main a la principal 
+
+git branch -m main 
+
+*ahora para hacer el push con estos cambios es 
+
+git push origin main 
+
+git pull origin main 
+
+*para forzar a fucionar los commits del clone con el repo local usamos 
+
+git pull origin main  --allow-unrelated-histories
+
+*hacemos nuevammente el git push origin main y se empezarán a subir los commits 

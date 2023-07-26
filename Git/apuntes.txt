@@ -1,5 +1,7 @@
 Un sistema de control de versiones como Git nos ayuda a guardar el historial de cambios y crecimiento de los archivos de nuestro proyecto.
 
+***TODO LO QUE DIGA "MASTER" DEBE SER CAMBIADO POR MAIN***
+
 - git init
 El comando para iniciar nuestro repositorio, o sea, indicarle a Git que queremos usar su sistema de control de versiones en nuestro proyecto, es
 
