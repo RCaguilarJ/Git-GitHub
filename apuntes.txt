@@ -1,0 +1,78 @@
+Un sistema de control de versiones como Git nos ayuda a guardar el historial de cambios y crecimiento de los archivos de nuestro proyecto.
+
+- git init
+El comando para iniciar nuestro repositorio, o sea, indicarle a Git que queremos usar su sistema de control de versiones en nuestro proyecto, es
+
+- git add .
+El comando para que nuestro repositorio sepa de la existencia de un archivo o sus últimos cambios
+Este comando no almacena las actualizaciones de forma definitiva, únicamente las guarda en algo que conocemos como “Staging Area” (área de montaje o ensayo).
+
+- git commit -m "Firts commit"
+El comando para almacenar definitivamente todos los cambios que por ahora viven en el staging area
+
+- git push 
+mandar nuestros commits a un servidor remoto, un lugar donde todos podamos conectar nuestros proyectos
+
+- git commit -am “commit description”
+ añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos)
+
+ - git status
+  ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit).
+
+- git rm (. -r, filename) (–cached)
+remueve los archivos del index.
+
+- git config --global user.email tu@email.com
+ configura un email.
+
+ -git config --global user.name
+  configura un nombre
+
+- git config --list
+lista las configuraciones.
+
+
+    git log: lista de manera descendente los commits realizados.
+    git log --stat: además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados.
+    git log --all --graph --decorate --oneline: muestra de manera comprimida toda la historia del repositorio de manera gráfica y embellecida.
+    git show filename: permite ver la historia de los cambios en un archivo.
+    git diff : compara diferencias entre en cambios confirmados.
+
+
+Ramas o Branches en git
+
+Al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.
+
+    git branch : crea una nueva rama.
+    git checkout : se mueve a la rama especificada.
+    git merge : fusiona la rama actual con la rama especificada y produce un nuevo commit de esta fusión.
+    git branch: lista las ramas generadas.
+
+
+Conceptos importantes de Git
+
+
+
+Repository: Donde se almacena todo el proyecto, el cual puede vivir tanto en local como en remoto. El repositorio guarda un historial de versiones y, más importante, de la relación de cada versión con la anterior para que pueda hacerse el árbol de versiones con las diferentes ramas.
+
+Fork: Si en algún momento queremos contribuir al proyecto de otra persona, o si queremos utilizar el proyecto de otro como el punto de partida del nuestro. Esto se conoce como “fork”.
+
+Clone: Una vez se decide hacer un fork , hasta ese momento sólo existe en GitHub. Para poder trabajar en el proyecto, toca clonar el repositorio elegido al computador personal.
+
+Branch: Es una bifurcación del proyecto que se está realizando para anexar una nueva funcionalidad o corregir un bug.
+
+Master: Rama donde se almacena la última versión estable del proyecto que se está realizando. La rama master es la que está en producción en cada momento (o casi) y debería estar libre de bugs. Así, si esta rama está en producción, sirve como referente para hacer nuevas funcionalidades y/o arreglar bugs de última hora.
+
+Commit: consiste en subir cosas a la versión local del repositorio. De esta manera se puede trabajar en la rama de forma local sin tener que modificar ninguna versión en remoto ni tener que tener la última versión remota, cosa muy útil en grandes desarrollos trabajados por varias personas.
+
+Push: Consiste en enviar todo lo que se ha confirmado con un commit al repositorio remoto. Aquí es donde se une nuestro trabajo con el de los demás.
+
+Checkout: Acción de descargarse una rama del repositorio GIT local (sí, GIT tiene su propio repositorio en local para poder ir haciendo commits) o remoto.
+
+Fetch: Actualiza el repositorio local bajando datos del repositorio remoto al repositorio local sin actualizarlo, es decir, se guarda una copia del repositorio remoto en el local.
+
+Merge: La acción de merge es la continuación natural del fetch. El merge permite unir la copia del repositorio remoto con tu repositorio local, mezclando los diferentes códigos.
+
+Pull: Consiste en la unión del fetch y del merge, esto es, recoge la información del repositorio remoto y luego mezcla el trabajo en local con esta.
+
+Diff: Se utiliza para mostrar los cambios entre dos versiones del mismo archivo.
