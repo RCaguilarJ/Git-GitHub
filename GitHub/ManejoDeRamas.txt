@@ -1,0 +1,30 @@
+***Esto es cuando hay varios colaboradores o trabajas el mismo proyecto en diferentes computadoras***
+Agregamos las historias de las ramaas 
+
+-git checkout (nombre de la rama (sin los parentesis)) 
+nos permite cambiar de rama y cambia los archivos a mi disco duro 
+
+-git checkout main 
+volvemos a la rama main 
+
+-git branch 
+muestra todas las ramas existentes 
+
+
+
+Comandos para manejo de ramas en GitHub
+
+    Crear una rama:
+    git branch branchName
+
+
+    Movernos a otra rama:
+    git checkout branchName
+
+
+    Crear una rama en el repositorio local:
+    git branch nombre-de-la-rama o git checkout -b nombre-de-la-rama.
+
+
+    Publicar una rama local al repositorio remoto:
+    git push origin nombre-de-la-rama.
