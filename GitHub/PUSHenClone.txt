@@ -25,3 +25,7 @@ git pull origin main
 git pull origin main  --allow-unrelated-histories
 
 *hacemos nuevammente el git push origin main y se empezarán a subir los commits 
+
+
+*git pull origin main 
+para actualizar los cambios de una computadora a otra 
