@@ -39,7 +39,7 @@ para traer el último cambio del servidor
 
   git branch --setup-upstreamo-to=origin/<branch> master(o main)--
 
-  debemos hacer 
+  *debemos hacer 
 
   git pull origin main (o master)
 

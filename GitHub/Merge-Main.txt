@@ -1,0 +1,29 @@
+***Esto es cuando clonamos u repositorio y no lo estamos trabajando desde cero***
+
+estando en la carpeta de usuario...
+-Hacer el clone de repositorio 
+*Se guarda una carpeta con el nombre del repo global (se mira con el comando ls -al)
+
+- hacer
+git commit -am "primer commit remoto"
+git pull origin master
+git push origin master 
+
+*pide nombre de usuario y contraseña 
+
+!!!!va a parecer acceso denegado porque el jefe no a dado acceso al repo!!!
+
+-ir a settings del repositorio
+-collaborators
+-add collaborator 
+-poner mi correo 
+
+*en mi perfil crear mi email público para que me puedan dar acceso a los repositorio*
+(se puede poner un username )
+ -encontrar el perfil y añadir colaborador 
+
+
+-volver a hacer push origin main 
+
+
+

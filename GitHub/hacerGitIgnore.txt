@@ -1,0 +1,18 @@
+Hay que ignorar archivos al crear y subir un repositorio para no tener problemas al hacer pull request ni push 
+***no se guardan archivos binarios (imágenes) en los repositorios ***
+
+.GitIgnore
+
+*.jpg (se igrnoran las imágenes)
+
+*ejemplo de un archivo en específico
+
+*.db-journal
+
+.build
+.dist
+.tmp
+
+/core/server/data/exported* (archivo/carpeta específica)
+
+!/content/theme/casper (no ignores lo que viene en /content/theme/casper )
